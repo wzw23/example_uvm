@@ -1,5 +1,7 @@
 `ifndef MY_AGENT__SV
 `define MY_AGENT__SV
+`include "my_driver.sv"
+`include "my_monitor.sv"
 
 class my_agent extends uvm_agent ;
    my_driver     drv;

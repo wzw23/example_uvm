@@ -45,9 +45,9 @@ initial begin
 end
 
 initial begin
-   uvm_config_db#(virtual my_if)::set(null, "uvm_test_top.drv", "vif", input_if);
-   uvm_config_db#(virtual my_if)::set(null, "uvm_test_top.i_mon", "vif", input_if);
-   uvm_config_db#(virtual my_if)::set(null, "uvm_test_top.o_mon", "vif", output_if);
+   uvm_config_db#(virtual my_if)::set(null, "uvm_test_top.i_agt.drv", "vif", input_if);
+   uvm_config_db#(virtual my_if)::set(null, "uvm_test_top.i_agt.i_mon", "vif", input_if);
+   uvm_config_db#(virtual my_if)::set(null, "uvm_test_top.o_agt.o_mon", "vif", output_if);
 end
 
 endmodule
